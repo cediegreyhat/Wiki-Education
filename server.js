@@ -13,7 +13,7 @@ app.get("/webhook", (req, res) => {
   //remember that I set "devc" as the callback parameter on
   // the facebook app dashboard
   console.log(req.query);
-  if (req.query["hub.verify_token"] === "devc") {
+  if (req.query["hub.verify_token"] === "rikudesu") {
     res.send(req.query["hub.challenge"]);
   } else {
     res.send("Error, wrong validation token");
